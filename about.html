@@ -7,15 +7,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { font-family: 'Roboto', sans-serif; margin: 0; background-color: #F5F5F5; color: #000000; }
-        header { background-color: #000000; padding: 1rem; position: fixed; width: 100%; z-index: 1000; }
-        nav a { color: #F5F5F5; text-decoration: none; margin: 0 1rem; }
-        section { padding: 2rem; max-width: 1200px; margin: auto; }
-        footer { background-color: #1E3A8A; color: #F5F5F5; text-align: center; padding: 1rem; }
-        .accordion-button { background-color: #E5E7EB; }
+        body { font-family: 'Roboto', sans-serif; margin: 0; background-color: #F5DEB3; color: #8B4513; transition: all 0.5s ease; }
+        header { background-color: #8B4513; padding: 1rem; position: fixed; width: 100%; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        nav a { color: #F5DEB3; text-decoration: none; margin: 0 1rem; transition: color 0.3s; }
+        nav a:hover { color: #FF6B35; }
+        section { padding: 2rem; max-width: 1200px; margin: auto; animation: fadeIn 1s ease; }
+        footer { background-color: #1E3A8A; color: #F5DEB3; text-align: center; padding: 1rem; }
+        .accordion-button { background-color: #E5E7EB; transition: background 0.3s; }
+        .accordion-button:hover { background-color: #D1D5DB; }
         .timeline { list-style: none; padding: 0; }
-        .timeline li { margin: 1rem 0; padding-left: 2rem; border-left: 2px solid #1E3A8A; }
+        .timeline li { margin: 1rem 0; padding-left: 2rem; border-left: 2px solid #FF6B35; transition: border-color 0.3s; }
+        .timeline li:hover { border-color: #E55A2B; }
         .sustainability { color: #10B981; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     </style>
 </head>
 <body>
@@ -31,15 +35,15 @@
         <div class="row">
             <div class="col-md-6">
                 <h1>Sobre a Cafeteira Dinamica Pro</h1>
-                <p>Inspirada em designs premium, nossa missão é trazer café profissional para casa com leite automático e sustentabilidade.</p>
+                <p>Transforme sua casa em uma cafeteria aconchegante com leite automático e aromas irresistíveis.</p>
                 <ul class="timeline">
-                    <li>2018: Lançamento com touchscreen.</li>
-                    <li>2020: Integração Wi-Fi.</li>
-                    <li>2023: <span class="sustainability">Cápsulas eco-friendly.</span></li>
+                    <li>2018: Nascida para baristas caseiros.</li>
+                    <li>2020: Wi-Fi para receitas remotas.</li>
+                    <li>2023: <span class="sustainability">Eco-friendly para um futuro sustentável.</span></li>
                 </ul>
             </div>
             <div class="col-md-6">
-                <img src="https://i.imgur.com/placeholder-cafeteira-design.jpg" alt="Design da Cafeteira Dinamica Pro com painel touchscreen" class="img-fluid">
+                <img src="https://source.unsplash.com/featured/?modern-coffee-machine-cafe" alt="Cafeteira Dinamica Pro em ambiente de cafeteria moderna" class="img-fluid rounded" style="animation: fadeIn 2s;">
             </div>
         </div>
         <div class="accordion" id="specs">
@@ -48,13 +52,13 @@
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Especificações Técnicas</button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show">
-                    <div class="accordion-body">Pressão: 15 bar. Capacidade: 1.8L de água. Limpeza automática incluída. Compatível com grãos e cápsulas.</div>
+                    <div class="accordion-body">Pressão: 15 bar. Capacidade: 1.8L. Limpeza automática para manutenção suave.</div>
                 </div>
             </div>
         </div>
     </section>
     <footer>
-        <p>&copy; 2023 Dinamica Pro.</p>
+        <p>&copy; 2023 Dinamica Pro. Vibe de cafeteria.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
