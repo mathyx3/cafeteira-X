@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - EspressoMaster Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos compartilhados do index.html */
+        body { font-family: 'Roboto', sans-serif; margin: 0; background-color: #F5F5F5; color: #000000; }
+        header { background-color: #000000; padding: 1rem; position: fixed; width: 100%; z-index: 1000; }
+        nav a { color: #F5F5F5; text-decoration: none; margin: 0 1rem; }
+        section { padding: 2rem; max-width: 1200px; margin: auto; }
+        footer { background-color: #1E3A8A; color: #F5F5F5; text-align: center; padding: 1rem; }
+        .accordion-button { background-color: #E5E7EB; }
+        .timeline { list-style: none; padding: 0; }
+        .timeline li { margin: 1rem 0; padding-left: 2rem; border-left: 2px solid #1E3A8A; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="d-flex justify-content-center">
+            <a href="index.html">Home</a>
+            <a href="about.html">Sobre</a>
+            <a href="products.html">Produtos</a>
+            <a href="contact.html">Contato</a>
+        </nav>
+    </header>
+    <section class="mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Sobre a EspressoMaster Pro</h1>
+                <p>Fundada em 2020, nossa missão é revolucionar o café doméstico com inovação e sustentabilidade.</p>
+                <ul class="timeline">
+                    <li>2020: Lançamento inicial.</li>
+                    <li>2022: Integração Wi-Fi.</li>
+                    <li>2023: Cápsulas eco-friendly.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="https://source.unsplash.com/featured/?coffee-machine-design" alt="Design da cafeteira EspressoMaster Pro" class="img-fluid">
+            </div>
+        </div>
+        <div class="accordion" id="specs">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Especificações Técnicas</button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">Dimensões: 30x20x40cm. Potência: 1500W. Compatível com grãos e cápsulas.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 EspressoMaster.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
